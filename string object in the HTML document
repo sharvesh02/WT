@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Object Operations</title>
+</head>
+<body>
+    <h1>String Object Operations</h1>
+    <script>
+        let str = "Hello, World!";
+        
+        // (1) Return the character at a specified location
+        let charAtIndex = str.charAt(7);
+        document.write("Character at index 7: " + charAtIndex + "<br>");
+        
+        // (2) Returns the unicode of the character at the specified index
+        let unicodeAtIndex = str.charCodeAt(7);
+        document.write("Unicode of character at index 7: " + unicodeAtIndex + "<br>");
+        
+        // (3) Joins two or more strings and returns a new joined string
+        let joinedStr = str.concat(" How are you?");
+        document.write("Joined String: " + joinedStr + "<br>");
+        
+        // (4) Converts unicode value to string
+        let fromUnicode = String.fromCharCode(65);
+        document.write("String from Unicode 65: " + fromUnicode + "<br>");
+        
+        // (5) Converts a string to uppercase letters
+        let upperStr = str.toUpperCase();
+        document.write("Uppercase String: " + upperStr + "<br>");
+    </script>
+</body>
+</html>
