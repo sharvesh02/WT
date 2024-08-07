@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal Registration</title>
+    <script>
+        function validateForm() {
+            var name = document.forms["jobForm"]["name"].value;
+            var email = document.forms["jobForm"]["email"].value;
+            var age = document.forms["jobForm"]["age"].value;
+            if (name == "" || email == "" || age == "") {
+                alert("All fields must be filled out");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h1>Job Portal Registration Form</h1>
+    <form name="jobForm" onsubmit="return validateForm()">
+        Name: <input type="text" name="name"><br>
+        Email: <input type="email" name="email"><br>
+        Age: <input type="number" name="age"><br>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
